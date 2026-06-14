@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lallmoney</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#0f172a;
+    color:white;
+}
+
+header{
+    position:fixed;
+    width:100%;
+    top:0;
+    background:rgba(15,23,42,.9);
+    backdrop-filter:blur(10px);
+    padding:15px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    z-index:1000;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:700;
+    color:#38bdf8;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+}
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:120px 20px;
+}
+
+.hero h1{
+    font-size:60px;
+    margin-bottom:20px;
+}
+
+.hero span{
+    color:#38bdf8;
+}
+
+.hero p{
+    max-width:700px;
+    margin:auto;
+    font-size:18px;
+    opacity:.8;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:30px;
+    padding:15px 35px;
+    background:#38bdf8;
+    color:white;
+    text-decoration:none;
+    border-radius:50px;
+    font-weight:600;
+}
+
+.section{
+    padding:80px 8%;
+}
+
+.title{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:#1e293b;
+    padding:25px;
+    border-radius:15px;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.price{
+    color:#38bdf8;
+    font-size:24px;
+    font-weight:bold;
+    margin:15px 0;
+}
+
+.buy{
+    display:inline-block;
+    background:#38bdf8;
+    color:white;
+    padding:10px 20px;
+    text-decoration:none;
+    border-radius:8px;
+}
+
+.features{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.feature{
+    background:#1e293b;
+    padding:20px;
+    border-radius:15px;
+}
+
+.testimonial{
+    background:#1e293b;
+    padding:25px;
+    border-radius:15px;
+    margin-bottom:20px;
+}
+
+footer{
+    text-align:center;
+    padding:30px;
+    background:#020617;
+}
+
+.whatsapp{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    background:#25D366;
+    color:white;
+    padding:15px 20px;
+    border-radius:50px;
+    text-decoration:none;
+    font-weight:bold;
+}
+</style>
+</head>
+<body>
+
+<header>
+    <div class="logo">Lallmoney</div>
+    <nav>
+        <a href="#produk">Produk</a>
+        <a href="#fitur">Keunggulan</a>
+        <a href="#testimoni">Testimoni</a>
+    </nav>
+</header>
+
+<section class="hero">
+<div>
+    <h1>Jual Produk Digital <span>Lebih Cepat</span></h1>
+    <p>
+        E-book, Template, dan Produk Digital 
+        dengan akses instan setelah pembayaran.
+    </p>
+    <a href="#produk" class="btn">Lihat Produk</a>
+</div>
+</section>
+
+<section id="produk" class="section">
+    <h2 class="title">Produk Terlaris</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>E-Book Cara Promosi Produk Digital</h3>
+            <div class="price">Rp1.000</div>
+            <p>Cara Promosi yang benar di produk digital.</p>
+            <br>
+            <a href="#" class="buy">Beli Sekarang</a>
+        </div>
+
+        <div class="card">
+            <h3>E-Book Bisnis Produk Digital</h3>
+            <div class="price">Rp17.000</div>
+            <p>Cara memulai bisnis produk digital dari nol.</p>
+            <br>
+            <a href="#" class="buy">Beli Sekarang</a>
+        </div>
+
+        <div class="card">
+            <h3>Paket Paket Bundling</h3>
+            <div class="price">Rp3.000</div>
+            <p>Paket hemat untuk belajar bisnis digital dari nol.</p>
+            <br>
+            <a href="#" class="buy">Beli Sekarang</a>
+        </div>
+
+        <div class="card">
+            <h3>Cara Jago Editing Capcut</h3>
+            <div class="price">Rp2.000</div>
+            <p>Cara jago editing di Capcut dan bisa buat konten faceless.</p>
+            <br>
+            <a href="#" class="buy">Beli Sekarang</a>
+        </div>
+
+        <div class="card">
+            <h3>E-book Super Lengkap Panduan Produk Digital</h3>
+            <div class="price">Rp9.000</div>
+            <p> panduan lengkap untuk memulai bisnis produk digital.</p>
+            <br>
+            <a href="#" class="buy">Beli Sekarang</a>
+        </div>
+
+        <div class="card">
+            <h3>Ecourse Mengenal Produk Digital</h3>
+            <div class="price">Rp11.000</div>
+            <p>Mengenal apa itu produk digital.</p>
+            <br>
+            <a href="#" class="buy">Beli Sekarang</a>
+        </div>
+
+        <div class="card">
+            <h3>Tamplate Toko Lynk.id</h3>
+            <div class="price">Rp1.000</div>
+            <p>Tamplate toko lynk.id yang bisa di castom sendiri + landing page.</p>
+            <br>
+            <a href="#" class="buy">Beli Sekarang</a>
+        </div>
+
+        <div class="card">
+            <h3>Cara Cepat Pecah Telur</h3>
+            <div class="price">Rp1.000</div>
+            <p>Agar bisa pecah telur dengan cepat dan mudah.</p>
+            <br>
+            <a href="#" class="buy">Beli Sekarang</a>
+        </div>
+
+        <div class="card">
+            <h3>Cara Cepat Laku & Menghasilkan</h3>
+            <div class="price">Rp3.000</div>
+            <p>Strategi untuk meningkatkan penjualan dan menghasilkan pendapatan dari produk digital.</p>
+            <br>
+            <a href="#" class="buy">Beli Sekarang</a>
+        </div>
+
+        <div class="card">
+            <h3>Jasa Letak Link di bio tiktok</h3>
+            <div class="price">Rp3.000</div>
+            <p>Jasa letak link di bio tiktok untuk memudahkan akses ke produk Anda.</p>
+            <br>
+            <a href="#" class="buy">Beli Sekarang</a>
+        </div>
+
+</section>
+
+
+<section id="fitur" class="section">
+    <h2 class="title">Kenapa Memilih Kami?</h2>
+
+    <div class="features">
+        <div class="feature">
+            <h3>Akses Instan</h3>
+            <p>File langsung didapat setelah pembayaran.</p>
+        </div>
+
+        <div class="feature">
+            <h3>Harga Terjangkau</h3>
+            <p>Cocok untuk pelajar dan pemula.</p>
+        </div>
+
+        <div class="feature">
+            <h3>Support</h3>
+            <p>Bantuan pelanggan melalui WhatsApp.</p>
+        </div>
+    </div>
+</section>
+
+<section id="testimoni" class="section">
+    <h2 class="title">Testimoni</h2>
+
+    <div class="testimonial">
+        ⭐⭐⭐⭐⭐
+        <p>Aman dan mudah di akses.</p>
+    </div>
+
+    <div class="testimonial">
+        ⭐⭐⭐⭐⭐
+        <p>Produk bisa beli lewat WhatsApp atau lynk.id.</p>
+    </div>
+</section>
+
+<footer>
+    Terima kasih telah mengunjungi Lallmoney. Hubungi kami di WhatsApp untuk pertanyaan atau bantuan lebih lanjut.
+</footer>
+
+<a class="whatsapp" href="https://wa.me/62882016530931">
+    WhatsApp
+</a>
+
+</body>
+</html>
